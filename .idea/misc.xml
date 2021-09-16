@@ -1,5 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Repos/ChupitoGratis/app/src/main/res/drawable/tab_indicator_default.xml" value="0.4484375" />
+        <entry key="..\:/Repos/ChupitoGratis/app/src/main/res/drawable/tab_indicator_selected.xml" value="0.4484375" />
+        <entry key="..\:/Repos/ChupitoGratis/app/src/main/res/drawable/tab_selector.xml" value="0.4484375" />
+        <entry key="..\:/Repos/ChupitoGratis/app/src/main/res/layout/activity_main.xml" value="0.46458333333333335" />
+        <entry key="..\:/Repos/ChupitoGratis/app/src/main/res/layout/activity_signup.xml" value="0.35833333333333334" />
+        <entry key="..\:/Repos/ChupitoGratis/app/src/main/res/layout/activity_welcome.xml" value="0.3307291666666667" />
+        <entry key="..\:/Repos/ChupitoGratis/app/src/main/res/layout/content_main.xml" value="0.35104166666666664" />
+        <entry key="..\:/Repos/ChupitoGratis/app/src/main/res/layout/step_back.xml" value="0.3307291666666667" />
+        <entry key="..\:/Repos/ChupitoGratis/app/src/main/res/layout/step_end.xml" value="0.44583333333333336" />
+        <entry key="..\:/Repos/ChupitoGratis/app/src/main/res/layout/step_front.xml" value="0.3307291666666667" />
+        <entry key="..\:/Repos/ChupitoGratis/app/src/main/res/layout/test.xml" value="0.4296875" />
+        <entry key="..\:/Repos/ChupitoGratis/app/src/main/res/xml/network_security_config.xml" value="0.35104166666666664" />
+      </map>
+    </option>
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>

@@ -31,6 +31,9 @@ public class GeofenceUtils {
         NINGUNO
     }
 
+    public static final int REQUEST_FRONT = 111;
+    public static final int REQUEST_BACK = 222;
+
     private static  PendingIntent geofencePendingIntent;
 
     public static PermisosUbicacion getPermisosActuales(Context context){
@@ -44,8 +47,7 @@ public class GeofenceUtils {
 
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
                 // Hace falta pedir permisos de back (Android >= 11)
-                if ((ActivityCompat.checkSelfPermission(context, Manifest.permission.ACCESS_BACKGROUND_LOCATION) != PackageManager.PERMISSION_GRANTED)
-                        && ((Activity) context).shouldShowRequestPermissionRationale(Manifest.permission.ACCESS_BACKGROUND_LOCATION)) {
+                if ((ActivityCompat.checkSelfPermission(context, Manifest.permission.ACCESS_BACKGROUND_LOCATION) != PackageManager.PERMISSION_GRANTED)) {
                     // No han sido dados los permisos de back
                     permisosUbicacion = PermisosUbicacion.FRONT;
                 } else {
