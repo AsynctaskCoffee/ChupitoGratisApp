@@ -1,5 +1,6 @@
 package com.carloslopezmari.myapplication;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.android.volley.NetworkResponse;
@@ -11,24 +12,29 @@ import com.android.volley.VolleyLog;
 import com.android.volley.toolbox.HttpHeaderParser;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
+import com.carloslopezmari.myapplication.WelcomeActivity.WelcomeActivity;
+import com.google.android.material.textfield.TextInputEditText;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.UnsupportedEncodingException;
+import java.util.function.LongFunction;
 
 public class LoginActivity extends AppCompatActivity {
 
     Button accessButton;
-    EditText usernameEditText;
-    EditText passwordEditText;
+    TextInputEditText usernameEditText;
+    TextInputEditText passwordEditText;
+    TextView signup;
 
 
     @Override
@@ -41,6 +47,7 @@ public class LoginActivity extends AppCompatActivity {
         accessButton = findViewById(R.id.access);
         usernameEditText = findViewById(R.id.username);
         passwordEditText = findViewById(R.id.password);
+        signup = findViewById(R.id.signUp);
 
         accessButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -107,6 +114,14 @@ public class LoginActivity extends AppCompatActivity {
                 }
 
 
+            }
+        });
+
+
+        signup.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(LoginActivity.this, SignUpActivity.class));
             }
         });
 

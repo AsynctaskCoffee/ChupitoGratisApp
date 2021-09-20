@@ -26,7 +26,9 @@ public class ActivityChooser {
         if(activity.getPreferences(Context.MODE_PRIVATE).getString("token", null) != null){
             //Ir a principal
         } else {
-            activity.startActivity(new Intent(activity.getApplicationContext(), LoginActivity.class));
+            Intent i = new Intent(activity.getApplicationContext(), WelcomeActivity.class);
+            i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+            activity.startActivity(i);
         }
 
 
