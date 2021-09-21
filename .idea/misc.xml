@@ -19,10 +19,11 @@
         <entry key="..\:/Repos/ChupitoGratis/app/src/main/res/layout/step_front.xml" value="0.3307291666666667" />
         <entry key="..\:/Repos/ChupitoGratis/app/src/main/res/layout/test.xml" value="0.4296875" />
         <entry key="..\:/Repos/ChupitoGratis/app/src/main/res/xml/network_security_config.xml" value="0.35104166666666664" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.32971014492753625" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>
