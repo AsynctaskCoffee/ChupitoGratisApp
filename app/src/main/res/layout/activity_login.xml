@@ -1,9 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
+    <egolabsapps.basicodemine.videolayout.VideoLayout
+        android:id="@+id/videoLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        app:sound="true"
+        app:video_gravity="centerCrop"
+        app:path_or_url="loginvideotype3.mp4"
+        app:loop="true"/>
 
 
     <ImageView
@@ -124,6 +135,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView2">
 
     </com.google.android.gms.common.SignInButton>
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
